@@ -1,1 +1,16 @@
 target/
+.idea/
+*.iml
+*.log
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+*.egg
+*.whl
+*.db
+*.sqlite3
+
+*.DS_Store
+*.vscode/
