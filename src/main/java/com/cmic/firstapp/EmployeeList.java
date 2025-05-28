@@ -48,10 +48,8 @@ public class EmployeeList {
     public List<Employee> getEmployeesWithSalaryGreaterThan(int salary) {
         return employees.stream()
                         .filter(e -> e.getSalary() > salary)
+                        .sorted((e1, e2) -> Integer.compare(e1.getSalary(), e2.getSalary()))
                         .toList();
     }
 
-    public List<Employee> getEmployees() {
-        return new ArrayList<>(employees);
-    }
 }
